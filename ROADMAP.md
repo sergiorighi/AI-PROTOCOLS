@@ -9,6 +9,7 @@ Atual:
 - governanca documental
 - testes manuais
 - benchmarks manuais FLAIP/1.0 e DEVSESSION/1.0
+- FLAIP/1.0 alinhado ao BriefPatchEnvelope atual do importer FlowLine
 
 Fase atual:
 - Protocol Validation

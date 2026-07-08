@@ -5,6 +5,16 @@ Scenario=FCS-01 loja de roupas
 Status=preliminary
 Ranking=not_definitive
 
+## Correction note
+
+Status=preserved_with_contract_correction
+
+- resultados originais preservados como historico preliminar
+- FLAIP/1.0 realinhado ao contrato FlowLine External AI BriefPatchEnvelope em v0.10
+- FLAIP/1.0 corrigido em v0.11 para o contrato atual do importer: intent brief_patch|brief_replace, confidence low|medium|high, prefixo antes do JSON e operacoes label/targetLabel
+- observacoes sobre request_compile continuam relevantes para a regra de ultima operacao
+- desvios de schema anteriores devem ser lidos contra o contrato corrigido
+
 ## Scores
 
 - Gemini=9.8
@@ -48,4 +58,3 @@ Status=not_applied
 - authorized_assumption_generate_editable_value_if_safe
 - operation_schemas_need_stricter_compact_shape
 - target_rules_per_operation
-

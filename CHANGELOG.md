@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## v0.11
+
+STATUS=flaip_importer_aligned_correction
+
+Mudancas:
+- FLAIP/1.0 corrigido para corresponder ao contrato atual do importer BriefPatchEnvelope do FlowLine
+- confidence limitado a low, medium ou high
+- intent limitado a brief_patch ou brief_replace
+- prefixo FLAIP/1.0 FINAL exigido antes do JSON, sem prefixo dentro de visibleReply
+- operacoes preservadas com label e targetLabel, sem schema target/entity/source/drain/value
+
+## v0.10
+
+STATUS=flaip_brief_patch_correction
+
+Mudancas:
+- FLAIP/1.0 realinhado ao contrato FlowLine External AI BriefPatchEnvelope
+- removido modelo generico de operacoes de grafo da especificacao FLAIP
+- exemplo de loja atualizado para envelope JSON BriefPatchEnvelope
+- benchmark FLAIP preservado com nota de correcao historica
+- README e ROADMAP atualizados com o alinhamento FLAIP corrigido
+
 ## v0.9
 
 STATUS=devsession_language_contract
