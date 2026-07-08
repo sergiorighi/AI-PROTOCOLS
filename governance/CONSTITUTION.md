@@ -2,22 +2,22 @@
 
 STATUS=active
 
-## Principios
+## Principles
 
-1. Protocolos sao contratos documentais.
-2. Clareza prevalece sobre completude prematura.
-3. Formato compacto prevalece sobre narrativa extensa.
-4. Cada protocolo deve ter objetivo unico e explicito.
-5. Campos obrigatorios devem ser previsiveis.
-6. Semantica deve ser declarativa e verificavel.
-7. Escopo negativo deve ser registrado quando relevante.
-8. Compatibilidade deve ser preservada por versao.
-9. Mudancas devem ser rastreadas no CHANGELOG.
-10. Implementacao nao deve ser exigida por especificacao documental.
+1. Protocols are documentation contracts.
+2. Clarity takes precedence over premature completeness.
+3. Compact format takes precedence over extended narrative.
+4. Each protocol must have a single explicit objective.
+5. Required fields must be predictable.
+6. Semantics must be declarative and verifiable.
+7. Negative scope must be recorded when relevant.
+8. Compatibility must be preserved by version.
+9. Changes must be tracked in CHANGELOG.
+10. Implementation must not be required by a documentation specification.
 
-## Regras
+## Rules
 
-- novos protocolos exigem especificacao propria
-- mudancas incompativeis exigem nova versao maior
-- documentos de governanca orientam decisao, nao criam runtime
-- excecoes devem ser explicitas no documento afetado
+- new protocols require their own specification
+- incompatible changes require a new major version
+- governance documents guide decisions; they do not create a runtime
+- exceptions must be explicit in the affected document

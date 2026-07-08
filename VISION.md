@@ -3,7 +3,7 @@
 ## Mission
 
 AI-PROTOCOLS=protocol_engineering
-MISSION=definir contratos compactos para IAs executarem, relatarem e comunicarem intencao operacional
+MISSION=define compact contracts for AIs to execute, report, and communicate operational intent
 
 ## Principles
 
@@ -30,4 +30,3 @@ MISSION=definir contratos compactos para IAs executarem, relatarem e comunicarem
 - transport_layer
 - agent_framework
 - code_implementation
-

@@ -1,13 +1,13 @@
 # DEVREPORT/1.0
 
-TIPO=report
-VERSAO=1.0
-OBJETIVO=descrever resultado retornado apos um DEVJOB
-ESTILO=compacto,declarativo,previsivel
+TYPE=report
+VERSION=1.0
+OBJECTIVE=describe the result returned after a DEVJOB
+STYLE=compact,declarative,predictable
 
-## Campos
+## Fields
 
-Obrigatorios:
+Required:
 - DEVREPORT/1.0
 - STATUS
 - SUMMARY
@@ -20,51 +20,50 @@ Obrigatorios:
 
 ## STATUS
 
-Valores:
+Values:
 - done
 - partial
 - blocked
 - failed
 
-## Semantica
+## Semantics
 
-STATUS=estado final do trabalho
-SUMMARY=resumo curto do resultado
-FILES_CHANGED=arquivos criados ou editados
-TESTS=verificacoes executadas
-DIFF_SUMMARY=resumo das mudancas
-RISKS=riscos residuais
-QUESTIONS=perguntas em aberto
-NEXT=proximo passo sugerido
+STATUS=final state of the work
+SUMMARY=short result summary
+FILES_CHANGED=created or edited files
+TESTS=checks that were run
+DIFF_SUMMARY=summary of changes
+RISKS=residual risks
+QUESTIONS=open questions
+NEXT=suggested next step
 
-## Regras
+## Rules
 
-- relatar somente o que foi feito
-- nao ocultar bloqueios
-- nao inventar testes
-- usar none quando vazio
-- usar formato previsivel
+- report only what was done
+- do not hide blockers
+- do not invent tests
+- use none when empty
+- use a predictable format
 
-## Formato
+## Format
 
 ```text
 DEVREPORT/1.0
 STATUS=done
 
 SUMMARY=
-texto curto
+short text
 
 FILES_CHANGED=
-arquivo
+file
 
 TESTS=
-verificacao
+check
 
 DIFF_SUMMARY=
-mudanca
+change
 
 RISKS=none
 QUESTIONS=none
 NEXT=none
 ```
-

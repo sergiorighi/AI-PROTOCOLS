@@ -1,32 +1,32 @@
-# FLAIP exemplo: store
+# FLAIP example: store
 
 FLAIP/1.0 FINAL:
 
 {
-  "visibleReply": "Patch de loja simples pronto para compilacao.",
+  "visibleReply": "Simple store patch ready for compilation.",
   "intent": "brief_patch",
   "briefPatch": {
     "operations": [
       {
         "op": "add_source",
-        "label": "Chegada de clientes"
+        "label": "Customer arrivals"
       },
       {
         "op": "set_arrival_rule",
-        "targetLabel": "Chegada de clientes",
-        "label": "clientes chegam de forma recorrente"
+        "targetLabel": "Customer arrivals",
+        "label": "customers arrive recurrently"
       },
       {
         "op": "add_entity",
-        "label": "Entrada"
+        "label": "Entry"
       },
       {
         "op": "add_entity",
-        "label": "Catalogo"
+        "label": "Catalog"
       },
       {
         "op": "add_entity",
-        "label": "Carrinho"
+        "label": "Cart"
       },
       {
         "op": "add_entity",
@@ -34,27 +34,27 @@ FLAIP/1.0 FINAL:
       },
       {
         "op": "add_entity",
-        "label": "Recibo"
+        "label": "Receipt"
       },
       {
         "op": "add_operation",
-        "targetLabel": "Entrada",
-        "label": "abrir catalogo"
+        "targetLabel": "Entry",
+        "label": "open catalog"
       },
       {
         "op": "add_operation",
-        "targetLabel": "Catalogo",
-        "label": "adicionar item"
+        "targetLabel": "Catalog",
+        "label": "add item"
       },
       {
         "op": "add_operation",
-        "targetLabel": "Carrinho",
-        "label": "finalizar pedido"
+        "targetLabel": "Cart",
+        "label": "submit order"
       },
       {
         "op": "add_operation",
         "targetLabel": "Checkout",
-        "label": "confirmar pagamento"
+        "label": "confirm payment"
       },
       {
         "op": "set_processing_time",
@@ -68,20 +68,20 @@ FLAIP/1.0 FINAL:
       },
       {
         "op": "add_drain",
-        "label": "Saida apos recibo"
+        "label": "Exit after receipt"
       },
       {
         "op": "set_drain",
-        "targetLabel": "Recibo",
-        "label": "Saida apos recibo"
+        "targetLabel": "Receipt",
+        "label": "Exit after receipt"
       },
       {
         "op": "add_assumption",
-        "label": "tempo de checkout estimado por ausencia de dado informado"
+        "label": "checkout time estimated because no value was provided"
       },
       {
         "op": "request_compile",
-        "label": "validar patch de loja simples no FlowLine"
+        "label": "validate simple store patch in FlowLine"
       }
     ]
   },
@@ -89,6 +89,6 @@ FLAIP/1.0 FINAL:
   "needsUserConfirmation": false,
   "capabilityGaps": [],
   "notes": [
-    "Envelope final sem markdown e sem code fence."
+    "Final envelope without markdown or code fence."
   ]
 }

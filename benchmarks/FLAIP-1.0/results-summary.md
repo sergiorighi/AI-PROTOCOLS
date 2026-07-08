@@ -1,7 +1,7 @@
 # FLAIP/1.0 results summary
 
 Protocol=FLAIP/1.0
-Scenario=FCS-01 loja de roupas
+Scenario=FCS-01 clothing store
 Status=preliminary
 Ranking=not_definitive
 
@@ -9,11 +9,11 @@ Ranking=not_definitive
 
 Status=preserved_with_contract_correction
 
-- resultados originais preservados como historico preliminar
-- FLAIP/1.0 realinhado ao contrato FlowLine External AI BriefPatchEnvelope em v0.10
-- FLAIP/1.0 corrigido em v0.11 para o contrato atual do importer: intent brief_patch|brief_replace, confidence low|medium|high, prefixo antes do JSON e operacoes label/targetLabel
-- observacoes sobre request_compile continuam relevantes para a regra de ultima operacao
-- desvios de schema anteriores devem ser lidos contra o contrato corrigido
+- original results preserved as preliminary history
+- FLAIP/1.0 realigned with the FlowLine External AI BriefPatchEnvelope contract in v0.10
+- FLAIP/1.0 corrected in v0.11 for the current importer contract: intent brief_patch|brief_replace, confidence low|medium|high, prefix before JSON, and label/targetLabel operations
+- observations about request_compile remain relevant to the last-operation rule
+- earlier schema deviations should be read against the corrected contract
 
 ## Scores
 
@@ -30,7 +30,7 @@ Status=preserved_with_contract_correction
 - request_compile last observed in Gemini and DeepSeek
 - schema drift observed in model-specific fields
 - source fields not standardized
-- optional provador handled better when model asked before linearizing
+- optional fitting room handled better when model asked before linearizing
 
 ## Quality observations
 

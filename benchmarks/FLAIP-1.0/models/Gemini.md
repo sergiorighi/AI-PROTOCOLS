@@ -4,42 +4,41 @@ Model=Gemini
 Provider=Google
 Execution context=manual
 Protocol=FLAIP/1.0
-Scenario=FCS-01 loja de roupas
+Scenario=FCS-01 clothing store
 
 Initial behavior=
-compacto
-direto
-bom equilibrio
+compact
+direct
+good balance
 
 Chat behavior=
-gerou tempos estimados sob autorizacao
-manteve fluxo objetivo
+generated estimated times under authorization
+kept objective flow
 
 Final output behavior=
-JSON final limpo
-request_compile por ultimo
+clean final JSON
+request_compile last
 
 Schema issues=
-campos role extras em add_source/add_drain
-source nao padronizado
+extra role fields in add_source/add_drain
+source not standardized
 
 Protocol deviations=
 none_observed_major
 
 Observed strengths=
-compacto
-direto
-bom equilibrio
-gerou tempos estimados
-JSON final limpo
-request_compile por ultimo
+compact
+direct
+good balance
+generated estimated times
+clean final JSON
+request_compile last
 
 Observed weaknesses=
-campos role extras em add_source/add_drain
-source nao padronizado
+extra role fields in add_source/add_drain
+source not standardized
 
 Preliminary score=9.8
 
 Recommended protocol changes=
 tighten_allowed_fields_per_operation
-

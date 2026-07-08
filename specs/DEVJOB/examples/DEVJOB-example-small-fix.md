@@ -1,4 +1,4 @@
-# DEVJOB exemplo: small fix
+# DEVJOB example: small fix
 
 ```text
 DEVJOB/1.0
@@ -8,10 +8,10 @@ PROJECT=demo
 ROOT=C:\demo
 
 GOAL=
-Corrigir texto duplicado no README.
+Fix duplicated text in README.
 
 SCOPE=
-Somente documentacao.
+Documentation only.
 
 FILES_ALLOWED=
 README.md
@@ -20,13 +20,12 @@ ALLOW=read,edit_docs_minimal,report
 DENY=delete,rename,code_changes,outside_root
 
 RULES=
-Manter o texto curto.
-Nao alterar arquivos fora da lista.
+Keep the text short.
+Do not change files outside the list.
 
 ACCEPTANCE=
-README sem texto duplicado.
-Sem codigo.
+README has no duplicated text.
+No code.
 
 OUTPUT=DEVREPORT/1.0
 ```
-

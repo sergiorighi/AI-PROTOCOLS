@@ -1,23 +1,44 @@
 # AI-PROTOCOLS
 
-Missao: manter protocolos compactos para coordenar trabalho entre humanos, agentes de IA e ferramentas.
+Compact documentation protocols for coordinating work between humans, AI agents, and tools.
 
-Visao: [VISION.md](VISION.md)
-Benchmarks: [benchmarks/README.md](benchmarks/README.md)
-Governanca: [governance/CONSTITUTION.md](governance/CONSTITUTION.md)
-Ciclo de vida: [governance/LIFECYCLE.md](governance/LIFECYCLE.md)
+This repository originated during FlowLine development, where small and verifiable contracts were needed to guide AI jobs, execution reports, and communication between external AI systems and FlowLine's BriefPatchEnvelope importer.
 
-Escopo inicial:
-- DEVJOB/1.0: descreve trabalho a executar.
-- DEVREPORT/1.0: descreve resultado retornado.
-- DEVSESSION/1.0: descreve contexto operacional compartilhado entre jobs.
-- FLAIP/1.0: descreve comunicacao entre IA externa e FlowLine via BriefPatchEnvelope atual do importer.
-- testes manuais: validam comportamento observavel de IAs.
-- benchmarks manuais: registram aderencia observada de modelos.
-- governanca: define principios e ciclo de vida dos protocolos.
+Status: experimental. Protocols may change while manual tests and benchmarks are still being stabilized.
 
-Fora do escopo inicial:
+## Protocols
+
+- DEVJOB/1.0: describes work to execute.
+- DEVREPORT/1.0: describes the returned result.
+- DEVSESSION/1.0: describes shared operational context across jobs.
+- FLAIP/1.0: describes communication between external AI and FlowLine through the current BriefPatchEnvelope importer.
+
+## Contents
+
+- [specs/](specs/): specifications, examples, and manual tests.
+- [benchmarks/](benchmarks/): preliminary manual compliance observations.
+- [governance/](governance/): principles and documentation lifecycle.
+- [VISION.md](VISION.md): mission, principles, and limits.
+- [ROADMAP.md](ROADMAP.md): current phase and future ideas.
+- [CHANGELOG.md](CHANGELOG.md): change history.
+
+## Scope
+
+- declarative, compact contracts.
+- manual tests: validate observable AI behavior.
+- manual benchmarks: record observed model compliance.
+- governance: defines principles and protocol lifecycle.
+
+Out of scope:
 - runtime
 - bridge
-- transporte
-- implementacoes
+- transport
+- implementations
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), and [SECURITY.md](SECURITY.md).
+
+## License
+
+Apache License 2.0. See [LICENSE](LICENSE).

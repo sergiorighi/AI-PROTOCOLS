@@ -4,39 +4,38 @@ Model=DeepSeek
 Provider=DeepSeek
 Execution context=manual
 Protocol=FLAIP/1.0
-Scenario=FCS-01 loja de roupas
+Scenario=FCS-01 clothing store
 
 Initial behavior=
-identificou provador opcional
-tratou provador como simplificacao/gap
+identified optional fitting room
+treated fitting room as simplification/gap
 
 Chat behavior=
-reconheceu lacunas
-nao estimou tempos apesar de autorizacao
+recognized gaps
+did not estimate times despite authorization
 
 Final output behavior=
-request_compile por ultimo
+request_compile last
 
 Schema issues=
-capabilityGaps incompleto
-preset inadequado em Atendimento
+capabilityGaps incomplete
+inadequate preset in Service
 
 Protocol deviations=
-nao estimou tempos apesar de autorizacao
+did not estimate times despite authorization
 
 Observed strengths=
-identificou provador opcional
-tratou como simplificacao/gap
-request_compile por ultimo
+identified optional fitting room
+treated it as simplification/gap
+request_compile last
 
 Observed weaknesses=
-capabilityGaps incompleto
-preset inadequado em Atendimento
-nao estimou tempos apesar de autorizacao
+capabilityGaps incomplete
+inadequate preset in Service
+did not estimate times despite authorization
 
 Preliminary score=9.2
 
 Recommended protocol changes=
 close_capabilityGap_schema
 clarify_authorized_assumptions
-

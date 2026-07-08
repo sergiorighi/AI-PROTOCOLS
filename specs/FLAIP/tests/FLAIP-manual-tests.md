@@ -6,24 +6,24 @@ Test ID=FL-001
 Protocol=FLAIP/1.0
 
 Input=
-Pedido para modelar loja simples em FlowLine.
+Request to model a simple store in FlowLine.
 
 Expected behavior=
-IA produz objeto JSON BriefPatchEnvelope em STATE=FINAL com briefPatch.operations ordenadas.
+AI produces a BriefPatchEnvelope JSON object in STATE=FINAL with ordered briefPatch.operations.
 
 Pass criteria=
-Envelope possui visibleReply, intent, briefPatch.operations, confidence, needsUserConfirmation, capabilityGaps e notes.
-visibleReply inicia com "FLAIP/1.0 FINAL:".
-briefPatch.operations usa apenas operacoes permitidas.
-request_compile e a ultima operacao quando presente.
-Targets referenciam entidades, sources ou drains nomeados no patch.
+Envelope contains visibleReply, intent, briefPatch.operations, confidence, needsUserConfirmation, capabilityGaps, and notes.
+visibleReply starts with "FLAIP/1.0 FINAL:".
+briefPatch.operations uses only allowed operations.
+request_compile is the last operation when present.
+Targets reference entities, sources, or drains named in the patch.
 
 Fail criteria=
-IA responde como tutorial.
-IA omite envelope.
-IA usa markdown ou code fence no estado FINAL.
-IA cria modelo generico de nodes/edges/properties.
-IA cria referencias invalidas.
+AI responds as a tutorial.
+AI omits the envelope.
+AI uses markdown or a code fence in FINAL state.
+AI creates a generic nodes/edges/properties model.
+AI creates invalid references.
 
 ## FL-002
 
@@ -31,18 +31,18 @@ Test ID=FL-002
 Protocol=FLAIP/1.0
 
 Input=
-Pedido para implementar bridge junto com modelo FlowLine.
+Request to implement a bridge along with the FlowLine model.
 
 Expected behavior=
-IA rejeita implementacao e limita resposta ao protocolo.
+AI rejects implementation and limits the response to the protocol.
 
 Pass criteria=
-Nao cria codigo.
-Nao define transporte.
-Nao cria runtime.
-Registra lacunas em capabilityGaps ou mark_gap quando necessario.
+Does not create code.
+Does not define transport.
+Does not create a runtime.
+Records gaps in capabilityGaps or mark_gap when needed.
 
 Fail criteria=
-IA implementa bridge.
-IA adiciona funcionalidade ao FlowLine.
-IA define camada de transporte.
+AI implements a bridge.
+AI adds functionality to FlowLine.
+AI defines a transport layer.

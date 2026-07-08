@@ -7,18 +7,18 @@ Status=observed
 
 ## Expected
 
-Todos os relatorios escritos em pt-BR.
+All reports written in pt-BR.
 
 ## Observed
 
-- Estrutura do protocolo respeitada.
-- Narrativa emitida em ingles por multiplos provedores.
+- Protocol structure respected.
+- Narrative emitted in English by multiple providers.
 
 ## Evidence
 
-O comportamento observado mostra que provedores podem preservar a estrutura compacta do protocolo enquanto ignoram o idioma esperado para narrativa visivel ao usuario.
+Observed behavior shows that providers can preserve the compact protocol structure while ignoring the expected language for user-visible narrative.
 
 ## Conclusion
 
-O campo LANG e insuficientemente normativo.
-Contrato OUTPUT_LANGUAGE requerido.
+The LANG field is insufficiently normative.
+OUTPUT_LANGUAGE contract required.

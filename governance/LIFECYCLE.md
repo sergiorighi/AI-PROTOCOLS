@@ -2,22 +2,22 @@
 
 STATUS=active
 
-## Estados
+## States
 
-- draft: proposta inicial
-- experimental: usado em testes ou sessoes limitadas
-- active: recomendado para uso corrente
-- deprecated: mantido por compatibilidade
-- retired: removido do uso recomendado
+- draft: initial proposal
+- experimental: used in tests or limited sessions
+- active: recommended for current use
+- deprecated: kept for compatibility
+- retired: removed from recommended use
 
-## Fluxo
+## Flow
 
 draft -> experimental -> active -> deprecated -> retired
 
-## Regras
+## Rules
 
-- toda mudanca relevante deve entrar no CHANGELOG
-- promocao de estado exige criterio observavel
-- deprecacao deve indicar substituto quando existir
-- remocao de uso recomendado nao apaga historico
-- ciclo de vida nao define implementacao
+- every relevant change must be recorded in CHANGELOG
+- state promotion requires observable criteria
+- deprecation must indicate a replacement when one exists
+- removal from recommended use does not erase history
+- the lifecycle does not define implementation

@@ -4,40 +4,39 @@ Model=Claude
 Provider=Anthropic
 Execution context=manual
 Protocol=FLAIP/1.0
-Scenario=FCS-01 loja de roupas
+Scenario=FCS-01 clothing store
 
 Initial behavior=
-melhor controle semantico
-perguntou antes de linearizar provador opcional
+best semantic control
+asked before linearizing optional fitting room
 
 Chat behavior=
-manteve negociacao antes do estado final
-tratou provador opcional como decisao estrutural
+kept negotiation before final state
+treated optional fitting room as a structural decision
 
 Final output behavior=
-presets corretos
-JSON final limpo
+correct presets
+clean final JSON
 
 Schema issues=
-source nao padronizado
-redundancia mark_gap+assumption+set_processing_time
+source not standardized
+redundancy mark_gap+assumption+set_processing_time
 
 Protocol deviations=
-capacidade de fila adicionada sem solicitacao
+queue capacity added without request
 
 Observed strengths=
-melhor controle semantico
-perguntou antes de linearizar provador opcional
-presets corretos
-JSON final limpo
+best semantic control
+asked before linearizing optional fitting room
+correct presets
+clean final JSON
 
 Observed weaknesses=
-redundancia mark_gap+assumption+set_processing_time
-source nao padronizado
-capacidade de fila adicionada sem solicitacao
+redundancy mark_gap+assumption+set_processing_time
+source not standardized
+queue capacity added without request
 
 Preliminary score=9.7
 
 Recommended protocol changes=
 no_duplicate_gap_and_value_same_parameter
-

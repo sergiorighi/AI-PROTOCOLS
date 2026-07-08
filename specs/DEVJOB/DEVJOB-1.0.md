@@ -1,13 +1,13 @@
 # DEVJOB/1.0
 
-TIPO=job
-VERSAO=1.0
-OBJETIVO=descrever trabalho a executar por IA
-ESTILO=compacto,declarativo,previsivel
+TYPE=job
+VERSION=1.0
+OBJECTIVE=describe work to be executed by AI
+STYLE=compact,declarative,predictable
 
-## Campos
+## Fields
 
-Obrigatorios:
+Required:
 - DEVJOB/1.0
 - LANG
 - ROLE
@@ -22,59 +22,58 @@ Obrigatorios:
 - ACCEPTANCE
 - OUTPUT
 
-## Semantica
+## Semantics
 
-LANG=idioma esperado para comunicacao
-ROLE=papel operacional do executor
-PROJECT=nome do projeto
-ROOT=pasta raiz permitida
-GOAL=resultado desejado
-SCOPE=limites positivos do trabalho
-FILES_ALLOWED=arquivos que podem ser criados ou editados
-ALLOW=acoes permitidas
-DENY=acoes proibidas
-RULES=regras de execucao
-ACCEPTANCE=criterios de aceite
-OUTPUT=formato esperado de resposta
+LANG=expected communication language
+ROLE=executor operational role
+PROJECT=project name
+ROOT=allowed root folder
+GOAL=desired result
+SCOPE=positive work limits
+FILES_ALLOWED=files that may be created or edited
+ALLOW=allowed actions
+DENY=forbidden actions
+RULES=execution rules
+ACCEPTANCE=acceptance criteria
+OUTPUT=expected response format
 
-## Regras
+## Rules
 
-- o executor deve respeitar ROOT
-- o executor deve respeitar FILES_ALLOWED
-- DENY prevalece sobre ALLOW
-- ACCEPTANCE define conclusao
-- OUTPUT define formato final
-- nao define transporte
-- nao cria runtime
-- nao depende de bridge
+- the executor must respect ROOT
+- the executor must respect FILES_ALLOWED
+- DENY takes precedence over ALLOW
+- ACCEPTANCE defines completion
+- OUTPUT defines the final format
+- does not define transport
+- does not create a runtime
+- does not depend on a bridge
 
-## Formato
+## Format
 
 ```text
 DEVJOB/1.0
 LANG=pt-BR
 ROLE=executor
-PROJECT=nome
-ROOT=caminho
+PROJECT=name
+ROOT=path
 
 GOAL=
-texto curto
+short text
 
 SCOPE=
-lista curta
+short list
 
 FILES_ALLOWED=
-arquivo
+file
 
-ALLOW=acao,acao
-DENY=acao,acao
+ALLOW=action,action
+DENY=action,action
 
 RULES=
-regra
+rule
 
 ACCEPTANCE=
-criterio
+criterion
 
 OUTPUT=DEVREPORT/1.0
 ```
-

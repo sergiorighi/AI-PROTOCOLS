@@ -1,99 +1,121 @@
 # CHANGELOG
 
+## v0.13
+
+STATUS=documentation_language_normalization
+
+Changes:
+- public-facing documentation normalized to English
+- governance, specs, and benchmark prose translated to English
+- protocol semantics preserved
+- examples that demonstrate pt-BR language behavior preserved where useful
+
+## v0.12
+
+STATUS=public_repository_preparation
+
+Changes:
+- README revised for first GitHub publication
+- Apache-2.0 license added
+- CONTRIBUTING, CODE_OF_CONDUCT, and SECURITY added
+- benchmark index updated with DEVSESSION/1.0
+- experimental repository status made explicit
+- no protocol semantic changes
+
 ## v0.11
 
 STATUS=flaip_importer_aligned_correction
 
-Mudancas:
-- FLAIP/1.0 corrigido para corresponder ao contrato atual do importer BriefPatchEnvelope do FlowLine
-- confidence limitado a low, medium ou high
-- intent limitado a brief_patch ou brief_replace
-- prefixo FLAIP/1.0 FINAL exigido antes do JSON, sem prefixo dentro de visibleReply
-- operacoes preservadas com label e targetLabel, sem schema target/entity/source/drain/value
+Changes:
+- FLAIP/1.0 corrected to match FlowLine's current BriefPatchEnvelope importer contract
+- confidence limited to low, medium, or high
+- intent limited to brief_patch or brief_replace
+- FLAIP/1.0 FINAL prefix required before JSON, without prefix inside visibleReply
+- operations preserved with label and targetLabel, without target/entity/source/drain/value schema
 
 ## v0.10
 
 STATUS=flaip_brief_patch_correction
 
-Mudancas:
-- FLAIP/1.0 realinhado ao contrato FlowLine External AI BriefPatchEnvelope
-- removido modelo generico de operacoes de grafo da especificacao FLAIP
-- exemplo de loja atualizado para envelope JSON BriefPatchEnvelope
-- benchmark FLAIP preservado com nota de correcao historica
-- README e ROADMAP atualizados com o alinhamento FLAIP corrigido
+Changes:
+- FLAIP/1.0 realigned with the FlowLine External AI BriefPatchEnvelope contract
+- generic graph operation model removed from the FLAIP specification
+- store example updated to a BriefPatchEnvelope JSON envelope
+- FLAIP benchmark preserved with historical correction note
+- README and ROADMAP updated with the corrected FLAIP alignment
 
 ## v0.9
 
 STATUS=devsession_language_contract
 
-Mudancas:
-- adicionado benchmark DEVSESSION/1.0 LANG-001 para conformidade de OUTPUT_LANGUAGE
-- adicionada especificacao DEVSESSION/1.0
-- contrato de idioma fortalecido com OUTPUT_LANGUAGE
-- README atualizado com DEVSESSION/1.0
-- ROADMAP atualizado com benchmarks DEVSESSION/1.0
-- CHANGELOG atualizado para v0.9
+Changes:
+- DEVSESSION/1.0 LANG-001 benchmark added for OUTPUT_LANGUAGE compliance
+- DEVSESSION/1.0 specification added
+- language contract strengthened with OUTPUT_LANGUAGE
+- README updated with DEVSESSION/1.0
+- ROADMAP updated with DEVSESSION/1.0 benchmarks
+- CHANGELOG updated for v0.9
 
 ## v0.8
 
 STATUS=governance_baseline
 
-Mudancas:
-- adicionada constituicao documental com 10 principios
-- adicionado ciclo de vida minimo para protocolos
-- README atualizado com governanca
-- ROADMAP atualizado com Governance Baseline
-- CHANGELOG atualizado para v0.8
+Changes:
+- documentation constitution added with 10 principles
+- minimum lifecycle added for protocols
+- README updated with governance
+- ROADMAP updated with Governance Baseline
+- CHANGELOG updated for v0.8
 
 ## v0.6
 
 STATUS=devsession_compact_experiment
 
-Mudancas:
-- adicionada nota experimental de sessao compacta DEVSESSION
-- registrado fluxo para carregar protocolos uma vez e executar jobs subsequentes
-- CHANGELOG atualizado para v0.6
+Changes:
+- experimental compact DEVSESSION note added
+- flow recorded for loading protocols once and running subsequent jobs
+- CHANGELOG updated for v0.6
 
 ## v0.5
 
 STATUS=manual_benchmarks
 
-Mudancas:
-- criada estrutura de benchmarks manuais
-- adicionado resumo FLAIP/1.0
-- registrados resultados preliminares por modelo
-- README atualizado com benchmarks
-- ROADMAP atualizado com Protocol Validation
+Changes:
+- manual benchmark structure created
+- FLAIP/1.0 summary added
+- preliminary results recorded by model
+- README updated with benchmarks
+- ROADMAP updated with Protocol Validation
 
 ## v0.3
 
 STATUS=manual_tests
 
-Mudancas:
-- adicionada visao do projeto
-- adicionados testes manuais DEVJOB
-- adicionados testes manuais DEVREPORT
-- adicionados testes manuais FLAIP
-- README atualizado com VISION
-- ROADMAP atualizado
+Changes:
+- project vision added
+- DEVJOB manual tests added
+- DEVREPORT manual tests added
+- FLAIP manual tests added
+- README updated with VISION
+- ROADMAP updated
 
 ## v0.2
 
 STATUS=initial_flaip
 
-Mudancas:
-- adicionada especificacao FLAIP/1.0
-- adicionado exemplo minimo de loja
-- README atualizado com FLAIP
-- ROADMAP atualizado
+Changes:
+- FLAIP/1.0 specification added
+- minimal store example added
+- README updated with FLAIP
+- ROADMAP updated
 
 ## v0.1
 
 STATUS=initial
 
-Mudancas:
-- criada base documental inicial
-- adicionada especificacao DEVJOB/1.0
-- adicionada especificacao DEVREPORT/1.0
-- adicionados exemplos minimos
-- adicionadas referencias compactas
+Changes:
+- initial documentation base created
+- DEVJOB/1.0 specification added
+- DEVREPORT/1.0 specification added
+- minimal examples added
+- compact references added

@@ -1,30 +1,31 @@
 # ROADMAP
 
-Atual:
+Current:
 - DEVJOB/1.0
 - DEVREPORT/1.0
 - DEVSESSION/1.0
 - FLAIP/1.0
 - VISION.md
-- governanca documental
-- testes manuais
-- benchmarks manuais FLAIP/1.0 e DEVSESSION/1.0
-- FLAIP/1.0 alinhado ao BriefPatchEnvelope atual do importer FlowLine
+- documentation governance
+- manual tests
+- manual benchmarks for FLAIP/1.0 and DEVSESSION/1.0
+- FLAIP/1.0 aligned with the current FlowLine BriefPatchEnvelope importer
 
-Fase atual:
+Current phase:
 - Protocol Validation
 - Governance Baseline
+- Public Repository Preparation
 
-Ideias futuras:
-- perfis de agente
-- validadores
-- implementacao via DEVAGENT-BRIDGE
-- novos presets FLAIP
-- matriz de compatibilidade de testes
-- matriz de benchmarks por protocolo
-- criterios formais de promocao de ciclo de vida
+Future ideas:
+- agent profiles
+- validators
+- implementation through DEVAGENT-BRIDGE
+- new FLAIP presets
+- test compatibility matrix
+- benchmark matrix by protocol
+- formal lifecycle promotion criteria
 
-Regra:
-- ideias futuras nao sao dependencia do escopo atual
-- novos protocolos exigem especificacao propria
-- governanca nao cria runtime
+Rule:
+- future ideas are not dependencies of the current scope
+- new protocols require their own specification
+- governance does not create a runtime

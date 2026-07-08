@@ -1,13 +1,13 @@
 # DEVSESSION/1.0
 
-TIPO=session
-VERSAO=1.0
-OBJETIVO=carregar contexto operacional compartilhado para jobs subsequentes
-ESTILO=compacto,declarativo,previsivel
+TYPE=session
+VERSION=1.0
+OBJECTIVE=load shared operational context for subsequent jobs
+STYLE=compact,declarative,predictable
 
-## Campos
+## Fields
 
-Obrigatorios:
+Required:
 - DEVSESSION/1.0
 - OUTPUT_LANGUAGE
 - PROJECT
@@ -16,36 +16,35 @@ Obrigatorios:
 - PROFILE
 - OUTPUT
 
-## Semantica
+## Semantics
 
-OUTPUT_LANGUAGE=idioma obrigatorio para texto visivel ao usuario
-PROJECT=nome do projeto
-ROOT=pasta raiz permitida
-LOAD_CONTEXTS=contextos iniciais carregados na sessao
-PROFILE=perfil operacional da sessao
-OUTPUT=formato esperado de resposta
+OUTPUT_LANGUAGE=mandatory language for user-visible text
+PROJECT=project name
+ROOT=allowed root folder
+LOAD_CONTEXTS=initial contexts loaded in the session
+PROFILE=session operational profile
+OUTPUT=expected response format
 
-## Regras
+## Rules
 
-- todo texto visivel ao usuario MUST ser emitido em OUTPUT_LANGUAGE
-- nomes de campos e palavras-chave do protocolo permanecem em English
-- jobs subsequentes podem omitir contexto ja carregado pela sessao
-- FILES_ALLOWED continua limitando arquivos editaveis por job
-- DENY continua prevalecendo sobre ALLOW
-- OUTPUT define formato final
-- nao define transporte
-- nao cria runtime
-- nao depende de bridge
+- all user-visible text MUST be emitted in OUTPUT_LANGUAGE
+- protocol field names and keywords remain in English
+- subsequent jobs may omit context already loaded by the session
+- FILES_ALLOWED continues to limit editable files per job
+- DENY continues to take precedence over ALLOW
+- OUTPUT defines the final format
+- does not define transport
+- does not create a runtime
+- does not depend on a bridge
 
-## Formato
+## Format
 
 ```text
 DEVSESSION/1.0
 OUTPUT_LANGUAGE=pt-BR
-PROJECT=nome
-ROOT=caminho
-LOAD_CONTEXTS=caminho
+PROJECT=name
+ROOT=path
+LOAD_CONTEXTS=path
 PROFILE=documentation
 OUTPUT=DEVREPORT/1.0
 ```
-

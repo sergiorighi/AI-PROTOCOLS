@@ -5,16 +5,16 @@ Method=manual_observation
 Status=preliminary
 
 Scenario=
-FCS-01 loja de roupas.
-Cliente chega.
-Atendimento por vendedor.
-Provador opcional.
-Caixa.
-Saida.
-Tempos ausentes.
-Chegada ausente.
-Usuario autoriza premissas padrao editaveis.
-JSON final somente apos "gerar modelo".
+FCS-01 clothing store.
+Customer arrives.
+Salesperson service.
+Optional fitting room.
+Cashier.
+Exit.
+Missing times.
+Missing arrival rule.
+User authorizes editable default assumptions.
+Final JSON only after "generate model".
 
 Fields:
 - Model
@@ -38,4 +38,3 @@ Models:
 - DeepSeek
 - Z.ai
 - Gemma4-e4b-local
-

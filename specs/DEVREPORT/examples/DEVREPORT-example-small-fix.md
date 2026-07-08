@@ -1,23 +1,22 @@
-# DEVREPORT exemplo: small fix
+# DEVREPORT example: small fix
 
 ```text
 DEVREPORT/1.0
 STATUS=done
 
 SUMMARY=
-Texto duplicado removido do README.
+Duplicated text removed from README.
 
 FILES_CHANGED=
 README.md
 
 TESTS=
-Revisao manual do documento.
+Manual document review.
 
 DIFF_SUMMARY=
-README: removida linha duplicada.
+README: duplicated line removed.
 
 RISKS=none
 QUESTIONS=none
 NEXT=none
 ```
-

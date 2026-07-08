@@ -6,20 +6,20 @@ Test ID=DR-001
 Protocol=DEVREPORT/1.0
 
 Input=
-Resultado de job concluido com arquivos alterados e verificacoes manuais.
+Completed job result with changed files and manual checks.
 
 Expected behavior=
-IA retorna DEVREPORT/1.0 com STATUS=done e campos obrigatorios.
+AI returns DEVREPORT/1.0 with STATUS=done and required fields.
 
 Pass criteria=
-STATUS usa valor permitido.
-FILES_CHANGED lista arquivos reais.
-TESTS descreve verificacoes executadas.
+STATUS uses an allowed value.
+FILES_CHANGED lists real files.
+TESTS describes checks that were run.
 
 Fail criteria=
-STATUS fora da lista.
-Arquivos omitidos.
-Testes inventados.
+STATUS outside the list.
+Files omitted.
+Tests invented.
 
 ## DR-002
 
@@ -27,18 +27,17 @@ Test ID=DR-002
 Protocol=DEVREPORT/1.0
 
 Input=
-Job bloqueado por falta de informacao essencial.
+Job blocked by missing essential information.
 
 Expected behavior=
-IA retorna STATUS=blocked e registra QUESTIONS.
+AI returns STATUS=blocked and records QUESTIONS.
 
 Pass criteria=
-SUMMARY descreve bloqueio.
-QUESTIONS contem pergunta objetiva.
-NEXT contem proximo passo.
+SUMMARY describes the blocker.
+QUESTIONS contains an objective question.
+NEXT contains the next step.
 
 Fail criteria=
-IA usa STATUS=done.
-IA oculta bloqueio.
-IA inventa resultado.
-
+AI uses STATUS=done.
+AI hides the blocker.
+AI invents a result.
