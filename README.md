@@ -1,7 +1,6 @@
 # AI-PROTOCOLS
-<<<<<<< HEAD
 
-Compact documentation protocols for coordinating work between humans, AI agents, and tools.
+Small documentation protocols for predictable AI-assisted development: sessions, jobs, reports, context loading, and protocol governance.
 
 This repository originated during FlowLine development, where small and verifiable contracts were needed to guide AI jobs, execution reports, and communication between external AI systems and FlowLine's BriefPatchEnvelope importer.
 
@@ -19,6 +18,7 @@ Status: experimental. Protocols may change while manual tests and benchmarks are
 - [specs/](specs/): specifications, examples, and manual tests.
 - [benchmarks/](benchmarks/): preliminary manual compliance observations.
 - [governance/](governance/): principles and documentation lifecycle.
+- [HOW_TO_USE.md](HOW_TO_USE.md): minimal first-use workflow.
 - [VISION.md](VISION.md): mission, principles, and limits.
 - [ROADMAP.md](ROADMAP.md): current phase and future ideas.
 - [CHANGELOG.md](CHANGELOG.md): change history.
@@ -43,6 +43,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 ## License
 
 Apache License 2.0. See [LICENSE](LICENSE).
-=======
-Small protocols for predictable AI-assisted development: sessions, jobs, reports, context loading, and protocol governance.
->>>>>>> 6882a34966e2a4139d572b2383d42fc7befcdc78

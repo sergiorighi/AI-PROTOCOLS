@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v0.14
+
+STATUS=first_use_guide
+
+Changes:
+- HOW_TO_USE.md added with a minimal DEVSESSION, DEVJOB, and DEVREPORT workflow
+- README linked to the first-use guide
+- unresolved README conflict markers removed
+- no protocol semantic changes
+
 ## v0.13
 
 STATUS=documentation_language_normalization
