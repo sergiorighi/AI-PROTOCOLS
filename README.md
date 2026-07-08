@@ -1,4 +1,5 @@
 # AI-PROTOCOLS
+<<<<<<< HEAD
 
 Compact documentation protocols for coordinating work between humans, AI agents, and tools.
 
@@ -42,3 +43,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 ## License
 
 Apache License 2.0. See [LICENSE](LICENSE).
+=======
+Small protocols for predictable AI-assisted development: sessions, jobs, reports, context loading, and protocol governance.
+>>>>>>> 6882a34966e2a4139d572b2383d42fc7befcdc78
