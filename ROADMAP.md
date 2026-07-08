@@ -5,11 +5,13 @@ Current:
 - DEVREPORT/1.0
 - DEVSESSION/1.0
 - FLAIP/1.0
+- BOOTSTRAP.md
 - VISION.md
 - documentation governance
 - manual tests
 - manual benchmarks for FLAIP/1.0 and DEVSESSION/1.0
 - FLAIP/1.0 aligned with the current FlowLine BriefPatchEnvelope importer
+- BOOTSTRAP-001 closed with self-contained first-session onboarding
 
 Current phase:
 - Protocol Validation

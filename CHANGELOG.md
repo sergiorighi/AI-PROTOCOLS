@@ -1,5 +1,49 @@
 # CHANGELOG
 
+## v0.18
+
+STATUS=context_loading_model_corrected
+
+Changes:
+- BOOTSTRAP.md separates AI_PROTOCOLS_SOURCE from LOAD_CONTEXTS
+- LOAD_CONTEXTS clarified as project context resolved relative to ROOT
+- PROJECT clarified as logical project name only
+- HOW_TO_USE.md examples updated to keep protocol source out of LOAD_CONTEXTS
+- no protocol semantic changes
+
+## v0.17
+
+STATUS=cli_bootstrap_minimal_reads
+
+Changes:
+- BOOTSTRAP.md now distinguishes human/chat onboarding from CLI/executor bootstrap
+- CLI/executor required reads reduced to DEVSESSION, DEVJOB, DEVREPORT, plus job-required specs
+- README.md and HOW_TO_USE.md marked as non-mandatory for CLI/executor bootstrap
+- GitHub URL remains the canonical protocol source
+- no protocol semantic changes
+
+## v0.16
+
+STATUS=bootstrap_responsibilities_clarified
+
+Changes:
+- BOOTSTRAP.md now distinguishes chat/orchestrator and CLI/executor responsibilities
+- GitHub URL documented as the canonical protocol source option
+- local path documented as an optional cache or working copy
+- HOW_TO_USE.md and README updated to reference the clarified bootstrap flow
+- no protocol semantic changes
+
+## v0.15
+
+STATUS=bootstrap_001_closed
+
+Changes:
+- BOOTSTRAP.md added as the canonical first-session onboarding entry
+- README now points brand-new agents to BOOTSTRAP.md
+- HOW_TO_USE.md now references BOOTSTRAP instead of repeating startup rules
+- startup sequence documented from README through DEVJOB loop
+- no protocol semantic changes
+
 ## v0.14
 
 STATUS=first_use_guide

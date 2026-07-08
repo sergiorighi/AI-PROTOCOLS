@@ -2,19 +2,29 @@
 
 Use AI-PROTOCOLS as small text contracts. Paste the relevant block into an AI session, then ask the model to follow it exactly.
 
+For human or chat onboarding, start with [BOOTSTRAP.md](BOOTSTRAP.md). It separates chat/orchestrator and CLI/executor responsibilities, and shows GitHub URL and local path loading.
+
+The CLI/executor does not need to read README.md or HOW_TO_USE.md. It should load operational specs from AI_PROTOCOLS_SOURCE, then load project context from LOAD_CONTEXTS.
+
 ## 1. Start a Session
 
-Use DEVSESSION when several jobs will share the same project context.
+After bootstrap, use DEVSESSION when several jobs will share the same project context.
+
+```text
+AI_PROTOCOLS_SOURCE=https://github.com/<owner>/AI-PROTOCOLS
+```
 
 ```text
 DEVSESSION/1.0
 OUTPUT_LANGUAGE=en
 PROJECT=example-project
 ROOT=/path/to/project
-LOAD_CONTEXTS=/path/to/project
+LOAD_CONTEXTS=.
 PROFILE=documentation
 OUTPUT=DEVREPORT/1.0
 ```
+
+AI_PROTOCOLS_SOURCE locates the protocol repository. LOAD_CONTEXTS locates project context and resolves relative to ROOT.
 
 ## 2. Send a Job
 
