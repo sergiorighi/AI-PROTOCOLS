@@ -6,7 +6,7 @@ This repository originated during FlowLine development, where small and verifiab
 
 Status: experimental. Protocols may change while manual tests and benchmarks are still being stabilized.
 
-For human or chat onboarding, start with [BOOTSTRAP.md](BOOTSTRAP.md). CLI/executors should load operational specs from AI_PROTOCOLS_SOURCE and project context from LOAD_CONTEXTS.
+For human or chat onboarding, say "Use AI-PROTOCOLS" and start with [BOOTSTRAP.md](BOOTSTRAP.md). For minimal chat or CLI bootstrap, load [AI-PROTOCOL.md](AI-PROTOCOL.md).
 
 ## Protocols
 
@@ -18,6 +18,7 @@ For human or chat onboarding, start with [BOOTSTRAP.md](BOOTSTRAP.md). CLI/execu
 ## Contents
 
 - [specs/](specs/): specifications, examples, and manual tests.
+- [AI-PROTOCOL.md](AI-PROTOCOL.md): single-file operational bundle for DEVSESSION, DEVJOB, and DEVREPORT.
 - [benchmarks/](benchmarks/): preliminary manual compliance observations.
 - [governance/](governance/): principles and documentation lifecycle.
 - [BOOTSTRAP.md](BOOTSTRAP.md): human/chat onboarding and CLI bootstrap responsibilities.

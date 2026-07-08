@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## v0.20
+
+STATUS=single_file_operational_bundle
+
+Changes:
+- AI-PROTOCOL.md added as a single-file operational bundle for chat and CLI bootstrap
+- bundle mirrors DEVSESSION, DEVJOB, and DEVREPORT without changing semantics
+- README and HOW_TO_USE now mention AI-PROTOCOL.md as the minimal bootstrap file
+- FLAIP remains separate and loaded only when needed
+- original specs remain canonical
+
+## v0.19
+
+STATUS=canonical_use_phrase_defined
+
+Changes:
+- BOOTSTRAP.md defines canonical behavior for "Use AI-PROTOCOLS"
+- current chat defaults to orchestrator role
+- executor role must be explicit when bootstrap responsibility is ambiguous
+- HOW_TO_USE.md includes minimal human and executor startup examples
+- no protocol semantic changes
+
 ## v0.18
 
 STATUS=context_loading_model_corrected

@@ -4,7 +4,21 @@ Use AI-PROTOCOLS as small text contracts. Paste the relevant block into an AI se
 
 For human or chat onboarding, start with [BOOTSTRAP.md](BOOTSTRAP.md). It separates chat/orchestrator and CLI/executor responsibilities, and shows GitHub URL and local path loading.
 
-The CLI/executor does not need to read README.md or HOW_TO_USE.md. It should load operational specs from AI_PROTOCOLS_SOURCE, then load project context from LOAD_CONTEXTS.
+The CLI/executor does not need to read README.md or HOW_TO_USE.md. For minimal bootstrap, it may load AI-PROTOCOL.md from AI_PROTOCOLS_SOURCE, then load project context from LOAD_CONTEXTS. Original specs remain canonical.
+
+Minimal human request:
+
+```text
+Use AI-PROTOCOLS.
+```
+
+Minimal executor startup:
+
+```text
+Use AI-PROTOCOLS as executor.
+AI_PROTOCOLS_SOURCE=https://github.com/<owner>/AI-PROTOCOLS
+READ=AI-PROTOCOL.md
+```
 
 ## 1. Start a Session
 
@@ -12,6 +26,7 @@ After bootstrap, use DEVSESSION when several jobs will share the same project co
 
 ```text
 AI_PROTOCOLS_SOURCE=https://github.com/<owner>/AI-PROTOCOLS
+READ=AI-PROTOCOL.md
 ```
 
 ```text
@@ -24,7 +39,7 @@ PROFILE=documentation
 OUTPUT=DEVREPORT/1.0
 ```
 
-AI_PROTOCOLS_SOURCE locates the protocol repository. LOAD_CONTEXTS locates project context and resolves relative to ROOT.
+AI_PROTOCOLS_SOURCE locates the protocol repository. AI-PROTOCOL.md is the minimal operational bundle. LOAD_CONTEXTS locates project context and resolves relative to ROOT.
 
 ## 2. Send a Job
 

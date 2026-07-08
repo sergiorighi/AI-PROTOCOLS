@@ -4,17 +4,51 @@ Use this file to explain how AI-PROTOCOLS is introduced to a brand-new agent or 
 
 Canonical protocol source: the GitHub repository URL provided by the user or project. A local path is optional and acts as a cache or working copy, not proof that a CLI/executor has already loaded the protocols.
 
+## Canonical Phrase
+
+When a human says:
+
+```text
+Use AI-PROTOCOLS.
+```
+
+Default behavior:
+
+- the current chat becomes the orchestrator
+- the orchestrator identifies or asks for AI_PROTOCOLS_SOURCE
+- any CLI/executor must bootstrap independently from AI_PROTOCOLS_SOURCE
+- the executor must not rely on protocol files read only by the chat
+
+If the role is ambiguous, ask the human to choose one:
+
+```text
+ROLE=orchestrator
+```
+
+```text
+ROLE=executor
+```
+
+Use this canonical startup phrase when assigning an executor:
+
+```text
+Use AI-PROTOCOLS as executor.
+AI_PROTOCOLS_SOURCE=https://github.com/<owner>/AI-PROTOCOLS
+```
+
 ## Responsibilities
 
 Chat/orchestrator:
 
-- tells the agent to use AI-PROTOCOLS
+- handles the human-facing request "Use AI-PROTOCOLS" by default
+- tells an executor to use AI-PROTOCOLS when execution is needed
 - provides AI_PROTOCOLS_SOURCE as a GitHub URL or local repository path when known
 - may read README.md, HOW_TO_USE.md, and BOOTSTRAP.md for human-facing onboarding
 - does not bootstrap the CLI/executor by reading files in chat
 
 CLI/executor:
 
+- starts only when explicitly assigned or when the runtime role is already executor
 - reads only operational protocol specs required for execution
 - minimum required specs: DEVSESSION/1.0, DEVJOB/1.0, and DEVREPORT/1.0
 - reads job-required specs such as FLAIP/1.0 only when the job needs them
